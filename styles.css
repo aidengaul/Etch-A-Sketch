@@ -14,6 +14,12 @@ body {
     align-items: center;
 }
 
+#option-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .option-text {
     text-align: center;
 }

@@ -53,8 +53,13 @@ function changeBoxState(e) {
 
 function changeCanvasSize(e) {
     const newSize = e.target.id;
-    numBoxes = newSize;
-    resetGrid();
+
+    if (newSize === "clear")
+        resetGrid();
+    else {
+        numBoxes = newSize;
+        resetGrid();
+    }
 }
 
 initGrid();
