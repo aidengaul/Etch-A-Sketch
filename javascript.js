@@ -27,14 +27,34 @@ function initGrid() {
     }
 
     const gridBoxes = document.querySelectorAll('.grid-box');
-
     gridBoxes.forEach((gridBox) => {
-        gridBox.addEventListener('mouseenter', changeBoxState)
-    });
+        gridBox.addEventListener('mouseenter', changeBoxState);
+    })
+
+    const buttons = document.querySelectorAll('button');
+    buttons.forEach((button) => {
+        button.addEventListener('click', changeCanvasSize);
+    })
+}
+
+function resetGrid() {
+    const container = document.getElementById('grid-container');
+
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+
+    initGrid();
 }
 
 function changeBoxState(e) {
     e.target.classList.add('selected');
+}
+
+function changeCanvasSize(e) {
+    const newSize = e.target.id;
+    numBoxes = newSize;
+    resetGrid();
 }
 
 initGrid();
