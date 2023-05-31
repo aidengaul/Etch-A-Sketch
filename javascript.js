@@ -1,4 +1,3 @@
-let grid = [];
 const numBoxes = 16; // this is for both x and y
 
 function initGrid() {
@@ -27,6 +26,16 @@ function initGrid() {
         
         container.appendChild(row);
     }
+
+    const gridBoxes = document.querySelectorAll('.grid-box');
+
+    gridBoxes.forEach((gridBox) => {
+        gridBox.addEventListener('mouseenter', changeBoxState)
+    });
+}
+
+function changeBoxState(e) {
+    e.target.classList.add('selected');
 }
 
 initGrid();
