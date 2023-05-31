@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
 
 .option-text {
@@ -31,11 +32,45 @@ list {
     padding: 20px;
 }
 
-button {
+#grid-options > li >button {
     border: 1px solid black;
     background-color: transparent;
     height: 70px;
     width: 70px;
+}
+
+#color-options > li > button {
+    border: 1px solid black;
+    height: 30px;
+    width: 30px;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#black {
+    background-color: black;
 }
 
 button:hover {
