@@ -1,20 +1,27 @@
-.row {
+#grid-container {
+    width: 360px;
+    height: 360px;
     display: flex;
-    height: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .grid-box {
-    width: 20px;
+    flex: 1;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-#last-row .grid-box {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+.last-column {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .last-box {
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .selected {
