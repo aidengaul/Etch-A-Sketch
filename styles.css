@@ -45,35 +45,35 @@ list {
     width: 30px;
 }
 
-.red {
+#red {
     background-color: red;
 }
 
-.orange {
+#orange {
     background-color: orange;
 }
 
-.yellow {
+#yellow {
     background-color: yellow;
 }
 
-.green {
+#green {
     background-color: green;
 }
 
-.blue {
+#blue {
     background-color: blue;
 }
 
-.purple {
+#purple {
     background-color: purple;
 }
 
-.black {
+#black {
     background-color: black;
 }
 
-.white {
+#white {
     background-color: white;
 }
 
@@ -92,6 +92,8 @@ button:hover {
     width: 360px;
     height: 360px;
     display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .column {
@@ -102,15 +104,15 @@ button:hover {
 
 .grid-box {
     flex: 1;
-    border-top: 1px solid rgba(0, 0, 0, 0.5);
-    border-left: 1px solid rgba(0, 0, 0, 0.5);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: 1px solid rgba(0, 0, 0, 0.2); 
 }
 
 .last-column {
-    border-right: 1px solid rgba(0, 0, 0, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .last-box {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
-}
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+} 
 

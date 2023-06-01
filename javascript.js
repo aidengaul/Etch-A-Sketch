@@ -57,11 +57,7 @@ function resetGrid() {
 }
 
 function changeBoxState(e) {
-    if (e.target.classList.contains('selected'))
-        return;
-        
-    e.target.classList.add(currentColor);
-    e.target.classList.add('selected');
+    e.target.style.backgroundColor = currentColor;
 }
 
 function changeCanvasSize(e) {
