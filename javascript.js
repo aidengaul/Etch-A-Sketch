@@ -31,10 +31,18 @@ function initGrid() {
         gridBox.addEventListener('mouseenter', changeBoxState);
     })
 
-    const buttons = document.querySelectorAll('button');
-    buttons.forEach((button) => {
+    const sizeButtons = document.querySelectorAll('.size-button');
+    sizeButtons.forEach((button) => {
         button.addEventListener('click', changeCanvasSize);
     })
+
+    const colorButtons = document.querySelectorAll('.color-button');
+    colorButtons.forEach((button) => {
+        button.addEventListener('click', changeColor)
+    })
+
+    const reset = document.querySelector('#clear');
+    reset.addEventListener('click', resetGrid);
 }
 
 function resetGrid() {
@@ -53,13 +61,12 @@ function changeBoxState(e) {
 
 function changeCanvasSize(e) {
     const newSize = e.target.id;
+    numBoxes = newSize;
+    resetGrid();
+}
 
-    if (newSize === "clear")
-        resetGrid();
-    else {
-        numBoxes = newSize;
-        resetGrid();
-    }
+function changeColor() {
+
 }
 
 initGrid();
