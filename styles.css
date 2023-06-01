@@ -45,32 +45,43 @@ list {
     width: 30px;
 }
 
-#red {
+.red {
     background-color: red;
 }
 
-#orange {
+.orange {
     background-color: orange;
 }
 
-#yellow {
+.yellow {
     background-color: yellow;
 }
 
-#green {
+.green {
     background-color: green;
 }
 
-#blue {
+.blue {
     background-color: blue;
 }
 
-#purple {
+.purple {
     background-color: purple;
 }
 
-#black {
+.black {
     background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+#clear {
+    border: 1px solid black;
+    background-color: transparent;
+    height: 40px;
+    width: 120px;
 }
 
 button:hover {
@@ -103,6 +114,3 @@ button:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-.selected {
-    background-color: aqua;
-}

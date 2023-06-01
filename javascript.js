@@ -1,5 +1,6 @@
 const defaultBoxes = 16;
 let numBoxes = defaultBoxes; 
+let currentColor = "black";
 
 function initGrid() {
     const container = document.getElementById('grid-container');
@@ -56,6 +57,10 @@ function resetGrid() {
 }
 
 function changeBoxState(e) {
+    if (e.target.classList.contains('selected'))
+        return;
+        
+    e.target.classList.add(currentColor);
     e.target.classList.add('selected');
 }
 
@@ -65,8 +70,8 @@ function changeCanvasSize(e) {
     resetGrid();
 }
 
-function changeColor() {
-
+function changeColor(e) {
+    currentColor = e.target.id;
 }
 
 initGrid();
